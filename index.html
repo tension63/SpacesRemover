@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Remove Spaces from Text</title>
+  <link rel="stylesheet" href="style.css" />
+<script>
+function removespc()
+{
+	var intxt;
+	intxt = document.getElementById("inputtxt").value;
+	document.getElementById("outputtxt").value = intxt.replaceAll(' ','');
+}
+</script>
+</head>
+<body>
+    <center><h1 style="color: #EFEFEF;">Remove Spaces from Text</h1></center>
+	<div id="input">
+	<center><input type="text" id="inputtxt" placeholder="Enter your text"></center>
+	<p> </p>
+	<center><button style="font-size: 18px" onclick="removespc()">Remove Spaces</button></center>
+	<p> </p>
+	<center><input type="text" id="outputtxt" placeholder="Output text"></center>
+	</div>
+</body>
+</html>
